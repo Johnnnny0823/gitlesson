@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY WEBSITE</title>
+    <!-- Include Font Awesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url(web.css);
+    </style>
+</head>
+
+<body>
+    <!-- 導航欄 -->
+    <header>
+        <h1>MY WEBSITE</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About me</a></li>
+                <li><a href="#skills-language">技能與語言</a></li>
+                <li><a href="#education-experience">學歷與工作經歷</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- 個人簡介區 -->
+    <section id="about" class="section about">
+        <h2>About me</h2>
+        <div class="profile-photo-container">
+            <img src="profile_pic.jpg" alt="照片" class="profile-photo">
+        </div>
+        <p>我是鄭翔元，目前就讀中原大學資訊管理系</p>
+        <p>期待能在大學四年期間培養好未來的工作能力，並且活出自己喜歡的樣子</p>
+    </section>
+
+    <!-- 技能與語言區 -->
+    <section id="skills-language" class="section skills-language">
+        <div class="skills">
+            <h2>技能</h2>
+            <div class="skill">
+                <i class="fab fa-python"></i> <!-- Python icon -->
+                <div class="square">
+                    <div class="square-s" style="width: 90%;"></div>
+                </div>
+                <p>90/100</p>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-java"></i> <!-- Java icon -->
+                <div class="square">
+                    <div class="square-s" style="width: 80%;"></div>
+                </div>
+                <p>80/100</p>
+            </div>
+
+            <div class="skill">
+                <i class="fab fa-html5"></i> <!-- HTML icon -->
+                <div class="square">
+                    <div class="square-s" style="width: 75%;"></div>
+                </div>
+                <p>75/100</p>
+            </div>
+        </div>
+
+        <div class="skills">
+            <h2>語言能力</h2>
+            <div class="skill">
+                <i class="fas fa-language"></i> <!-- Language icon -->
+                <div class="square">
+                    <div class="square-s" style="width: 100%;"></div>
+                </div>
+                <p>中文 - 100/100</p>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-language"></i> <!-- Language icon -->
+                <div class="square">
+                    <div class="square-s" style="width: 85%;"></div>
+                </div>
+                <p>英文 - 85/100</p>
+            </div>
+
+            <div class="skill">
+                <i class="fas fa-language"></i> <!-- Language icon -->
+                <div class="square">
+                    <div class="square-s" style="width: 25%;"></div>
+                </div>
+                <p>西文 - 25/100</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 學歷與工作經歷區 -->
+    <section id="education-experience" class="section education-experience">
+        <div class="education">
+            <h2>學歷</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2020 - 2023</div>
+                    <div class="timeline-content">
+                        <h3>恆毅高中</h3>
+                        <p>社會組</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 現在</div>
+                    <div class="timeline-content">
+                        <h3>中原大學</h3>
+                        <p>資訊管理系</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="work-experience">
+            <h2>工作經歷</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 2024</div>
+                    <div class="timeline-content">
+                        <h3>微熱山丘打工經歷</h3>
+                        <p>在微熱山丘擔任店員，負責顧客服務、產品介紹與銷售，並協助店鋪日常營運工作。</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2023 - 現在</div>
+                    <div class="timeline-content">
+                        <h3>某科技公司助理</h3>
+                        <p>在此工作期間，負責協助團隊進行技術開發、測試和項目管理。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 聯繫我區 -->
+    <section id="contact" class="section contact">
+        <h2>聯繫我</h2>
+        <form action="#" method="post">
+            <label for="name">姓名:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">電子郵件:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">信息:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">發送</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 你的名字. 版權所有。</p>
+    </footer>
+</body>
+
+</html>

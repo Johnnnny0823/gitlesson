@@ -1,0 +1,185 @@
+/* Global styles remain the same */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 0.5em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+.section {
+    padding: 4em 1em;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.profile-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.about, .contact {
+    background-color: #f4f4f4;
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.about p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+/* Skills and language progress bars */
+.square, .square1 {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.square-s, .square-s1 {
+    height: 100%;
+    background-color: #03045e;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+}
+
+.skills p, .language p {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #333;
+}
+
+/* Added styling for skill icons */
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.skill i {
+    font-size: 2em;
+    color: #03045e;
+}
+
+/* Skills section styling */
+.skills {
+    background-color: #f4f4f4;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2em;
+}
+
+/* Language section styling */
+.language {
+    background-color: #f4f4f4;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.language-item {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1.5em;
+}
+
+.language-item i {
+    font-size: 2em;
+    color: #03045e;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    margin-top: 2em;
+    border-left: 3px solid #ddd;
+}
+
+.timeline-item {
+    margin-bottom: 2em;
+    position: relative;
+}
+
+.timeline-date {
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    color: #4CAF50;
+}
+
+.timeline-content {
+    padding: 0.5em 1em;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+/* Education and work experience side by side */
+.education-experience {
+    display: flex;
+    gap: 3em;
+}
+
+/* Individual sections */
+.education, .work-experience {
+    flex: 1;
+}
+
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #222;
+    color: #fff;
+    margin-top: 2em;
+}
