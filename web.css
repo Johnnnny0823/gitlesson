@@ -218,12 +218,12 @@ header nav ul li a {
     list-style: none;
     display: flex;
     justify-content: center;
-    gap: 2em;
+    gap: 5em;
     margin-top: 1em;
 }
 
 .contact ul li a {
-    font-size: 2em;
+    font-size: 5em;
     color: #222;
     transition: color 0.3s ease;
     text-decoration: none;
