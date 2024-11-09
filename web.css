@@ -10,7 +10,7 @@ body {
     font-family: Arial, sans-serif;
     color: #333;
     line-height: 1.6;
-    background-image: url('BACKGROUND.jpg'); /* 這裡可以設置一個背景圖片 */
+    background-image: url('image/BACKGROUND.jpg'); /* 這裡可以設置一個背景圖片 */
     background-size: cover; /* 確保背景圖片覆蓋整個畫面 */
     background-position: center;
     background-attachment: fixed; /* 固定背景，使其隨頁面滾動 */
