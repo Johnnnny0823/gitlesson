@@ -7,7 +7,30 @@
     <title>MY WEBSITE</title>
     <!-- Include Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="web.css">
+    <style>
+        @import url(web.css);
+
+        /* 固定返回最上方按鈕 */
+        #backToTop {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            padding: 10px 15px;
+            font-size: 24px;
+            cursor: pointer;
+            display: none;
+            /* 初始隱藏 */
+            z-index: 1000;
+        }
+
+        #backToTop:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 
 <body>
@@ -24,7 +47,6 @@
             </ul>
         </nav>
     </header>
-
 
     <!-- 個人簡介區 -->
     <section id="about" class="section about">
@@ -161,31 +183,44 @@
             <!-- 新增的多益成績區塊 -->
             <div class="achievement toeic">
                 <img src="Toeic.jpg" alt="多益成績">
-                <p>我參加了多益測驗，取得了695分的成績，目前認為這次的成績不夠理想，日後會再考取一次多益，期待能獲得更高的成就，以增強我在國際環境中的競爭力。</p>
+                <p>我參加了多益測驗，取得了695分的成績，目前認為這次的成績不夠理想，日後會再考取一次多益，期待能獲得更高的分數。</p>
             </div>
         </div>
     </section>
 
-    <!-- 聯繫我區 -->
+    <!-- 聯繫方式區 -->
+    <!-- 聯繫方式區 -->
     <section id="contact" class="section contact">
         <h2>聯繫方式</h2>
-        <div class="contact-icons">
-            <a href="https://www.instagram.com/x_8.23/" target="_blank" class="icon-link">
-                <i class="fab fa-instagram"></i>
-            </a>
-            <a href="https://www.facebook.com/profile.php?id=100025629301749&locale=zh_TW" target="_blank"
-                class="icon-link">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="mailto:johnsnow94823@gmail.com" class="icon-link">
-                <i class="fas fa-envelope"></i>
-            </a>
-        </div>
+        <ul>
+            <li><a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
+            </li>
+            <li><a href="https://www.facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a></li>
+        </ul>
     </section>
 
+
+    <!-- 網頁底部 -->
     <footer>
         <p>&copy; 2024 鄭翔元. 版權所有。</p>
     </footer>
+
+    <!-- 返回最上方按鈕 -->
+    <button id="backToTop" onclick="window.scrollTo(0, 0);"><i class="fas fa-arrow-up"></i></button>
+
+    <!-- 新增的JavaScript代碼 -->
+    <script>
+        // 當頁面滾動時，顯示或隱藏返回最上方按鈕
+        window.onscroll = function () {
+            var button = document.getElementById("backToTop");
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
 </body>
 
 </html>

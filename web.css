@@ -213,13 +213,23 @@ header nav ul li a {
     margin-right: auto;
 }
 
-.contact-icons {
-    font-size: 6em;
-    color: #222;
-    transition: color 0.3s ease;
+/* 圖標樣式 */
+.contact ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-top: 1em;
 }
 
-.contact-icons:hover {
+.contact ul li a {
+    font-size: 2em;
+    color: #222;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
     color: #4CAF50;
 }
 
