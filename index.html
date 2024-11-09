@@ -7,9 +7,7 @@
     <title>MY WEBSITE</title>
     <!-- Include Font Awesome for icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url(web.css);
-    </style>
+    <link rel="stylesheet" href="web.css">
 </head>
 
 <body>
@@ -18,13 +16,15 @@
         <h1>MY WEBSITE</h1>
         <nav>
             <ul>
-                <li><a href="#about">About me</a></li>
-                <li><a href="#skills-language">技能與語言</a></li>
+                <li><a href="#about">關於我</a></li>
+                <li><a href="#skills-language">技能和語言能力</a></li>
                 <li><a href="#education-experience">學歷與工作經歷</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#personal-achievements">個人經歷</a></li> <!-- 新增個人經歷連結 -->
+                <li><a href="#contact">聯繫方式</a></li>
             </ul>
         </nav>
     </header>
+
 
     <!-- 個人簡介區 -->
     <section id="about" class="section about">
@@ -32,8 +32,8 @@
         <div class="profile-photo-container">
             <img src="profile_pic.jpg" alt="照片" class="profile-photo">
         </div>
-        <p>我是鄭翔元，目前就讀中原大學資訊管理系</p>
-        <p>期待能在大學四年期間培養好未來的工作能力，並且活出自己喜歡的樣子</p>
+        <p>我是鄭翔元，目前就讀中原大學資訊管理系,個性沉穩內斂</p>
+        <p>"「Keep Walking」（Johnnie Walker）"</p>
     </section>
 
     <!-- 技能與語言區 -->
@@ -41,7 +41,7 @@
         <div class="skills">
             <h2>技能</h2>
             <div class="skill">
-                <i class="fab fa-python"></i> <!-- Python icon -->
+                <i class="fab fa-python"></i>
                 <div class="square">
                     <div class="square-s" style="width: 90%;"></div>
                 </div>
@@ -49,7 +49,7 @@
             </div>
 
             <div class="skill">
-                <i class="fab fa-java"></i> <!-- Java icon -->
+                <i class="fab fa-java"></i>
                 <div class="square">
                     <div class="square-s" style="width: 80%;"></div>
                 </div>
@@ -57,7 +57,7 @@
             </div>
 
             <div class="skill">
-                <i class="fab fa-html5"></i> <!-- HTML icon -->
+                <i class="fab fa-html5"></i>
                 <div class="square">
                     <div class="square-s" style="width: 75%;"></div>
                 </div>
@@ -68,7 +68,7 @@
         <div class="skills">
             <h2>語言能力</h2>
             <div class="skill">
-                <i class="fas fa-language"></i> <!-- Language icon -->
+                <i class="fas fa-language"></i>
                 <div class="square">
                     <div class="square-s" style="width: 100%;"></div>
                 </div>
@@ -76,7 +76,7 @@
             </div>
 
             <div class="skill">
-                <i class="fas fa-language"></i> <!-- Language icon -->
+                <i class="fas fa-language"></i>
                 <div class="square">
                     <div class="square-s" style="width: 85%;"></div>
                 </div>
@@ -84,7 +84,7 @@
             </div>
 
             <div class="skill">
-                <i class="fas fa-language"></i> <!-- Language icon -->
+                <i class="fas fa-language"></i>
                 <div class="square">
                     <div class="square-s" style="width: 25%;"></div>
                 </div>
@@ -116,42 +116,75 @@
         </div>
 
         <div class="work-experience">
-            <h2>工作經歷</h2>
+            <h2>工作經歷與期望</h2>
             <div class="timeline">
                 <div class="timeline-item">
                     <div class="timeline-date">2023 - 2024</div>
                     <div class="timeline-content">
-                        <h3>微熱山丘打工經歷</h3>
-                        <p>在微熱山丘擔任店員，負責顧客服務、產品介紹與銷售，並協助店鋪日常營運工作。</p>
+                        <h3>Smille 松菸打工經歷</h3>
+                        <p>在Smille 松菸擔任店員，負責顧客服務、產品介紹與銷售，並協助店鋪日常營運工作。</p>
                     </div>
                 </div>
                 <div class="timeline-item">
-                    <div class="timeline-date">2023 - 現在</div>
+                    <div class="timeline-date">畢業後</div>
                     <div class="timeline-content">
-                        <h3>某科技公司助理</h3>
-                        <p>在此工作期間，負責協助團隊進行技術開發、測試和項目管理。</p>
+                        <h3>未來工作期望</h3>
+                        <p>成為某科技公司助理，負責協助團隊進行技術開發、測試和項目管理。</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- 個人經歷區 -->
+    <section id="personal-achievements" class="section personal-achievements">
+        <h2>個人經歷</h2>
+        <div class="achievements">
+            <div class="achievement">
+                <img src="911093.jpg" alt="運算思維獎狀">
+                <p>國三在電腦課考取的運算思維獎狀，展示了我的邏輯分析與問題解決能力超過全國一半以上的人，並對日後的資訊管理學習奠定了堅實的基礎，倘若能再多考個20分，就能獲得PR91的成績，日後可以再嘗試挑戰看看。
+                </p>
+            </div>
+            <div class="achievement">
+                <video src="slave.mp4" controls></video>
+                <p>在管理學課程中擔任志工，跟小朋友一起搭遊覽車前往老街溪淨溪，參與活動的同時要隨時注意小朋友的安全，不要讓他們亂跑，也要帶著他們收拾溪邊的垃圾並講解環保的知識。</p>
+            </div>
+            <div class="achievement">
+                <img src="Smile.jpg" alt="工作照片">
+                <p>第一次打工選擇了台北市的松菸Smile，在那邊主要負責飲料製作、餐點製作、服務客人以及介紹產品，獲得打工經驗的同時，也能夠迫使自己跟客人溝通，加強自己的社交能力，這項打工讓我學習到顧客服務與產品銷售的技巧，並體會到餐飲服務業的挑戰與成就感。
+                </p>
+            </div>
+            <div class="achievement">
+                <img src="Club.jpg" alt="社團大合照">
+                <p>參加社團活動，強迫自己參與多人的社交當中，改善自己不善社交且內向的性格。</p>
+            </div>
+            <!-- 新增的多益成績區塊 -->
+            <div class="achievement toeic">
+                <img src="Toeic.jpg" alt="多益成績">
+                <p>我參加了多益測驗，取得了695分的成績，目前認為這次的成績不夠理想，日後會再考取一次多益，期待能獲得更高的成就，以增強我在國際環境中的競爭力。</p>
+            </div>
+        </div>
+    </section>
+
     <!-- 聯繫我區 -->
     <section id="contact" class="section contact">
-        <h2>聯繫我</h2>
-        <form action="#" method="post">
-            <label for="name">姓名:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">電子郵件:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">信息:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">發送</button>
-        </form>
+        <h2>聯繫方式</h2>
+        <div class="contact-icons">
+            <a href="https://www.instagram.com/x_8.23/" target="_blank" class="icon-link">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=100025629301749&locale=zh_TW" target="_blank"
+                class="icon-link">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="mailto:johnsnow94823@gmail.com" class="icon-link">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 你的名字. 版權所有。</p>
+        <p>&copy; 2024 鄭翔元. 版權所有。</p>
     </footer>
 </body>
 
