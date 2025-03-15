@@ -1,226 +1,77 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-TW">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY WEBSITE</title>
-    <!-- Include Font Awesome for icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url(web.css);
-
-        /* 固定返回最上方按鈕 */
-        #backToTop {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 50%;
-            padding: 10px 15px;
-            font-size: 24px;
-            cursor: pointer;
-            display: none;
-            /* 初始隱藏 */
-            z-index: 1000;
-        }
-
-        #backToTop:hover {
-            background-color: #0056b3;
-        }
-    </style>
+    <title>首頁 - Anya Taylor-Joy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- 載入 ICON -->
 </head>
 
 <body>
-    <!-- 導航欄 -->
     <header>
-        <h1>MY WEBSITE</h1>
         <nav>
             <ul>
-                <li><a href="#about">關於我</a></li>
-                <li><a href="#skills-language">技能和語言能力</a></li>
-                <li><a href="#education-experience">學歷與工作經歷</a></li>
-                <li><a href="#personal-achievements">個人經歷</a></li> <!-- 新增個人經歷連結 -->
-                <li><a href="#contact">聯繫方式</a></li>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="biography.html">生平</a></li>
+                <li><a href="filmography.html">作品列表</a></li>
+                <li><a href="awards.html">獎項</a></li>
+                <li><a href="photos.html">圖片集</a></li>
+                <li><a href="videos.html">影片</a></li>
+                <li><a href="quotes.html">名言</a></li>
+                <li><a href="news.html">最新消息</a></li>
+                <li><a href="fanart.html">粉絲創作</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
             </ul>
         </nav>
     </header>
-
-    <!-- 個人簡介區 -->
-    <section id="about" class="section about">
-        <h2>關於我</h2>
-        <div class="profile-photo-container">
-            <img src="image/profile_pic.jpg" alt="照片" class="profile-photo">
-        </div>
-        <p>我是鄭翔元，目前就讀中原大學資訊管理系,個性沉穩內斂</p>
-        <p>"「Keep Walking」（Johnnie Walker）"</p>
-    </section>
-
-    <!-- 技能與語言區 -->
-    <section id="skills-language" class="section skills-language">
-        <div class="skills">
-            <h2>技能</h2>
-            <div class="skill">
-                <i class="fab fa-python"></i>
-                <div class="square">
-                    <div class="square-s" style="width: 90%;"></div>
-                </div>
-                <p>90/100</p>
+    <main>
+        <section>
+            <div class="header-container">
+                <img src="image/Banner.png" alt="Anya Taylor-Joy">
             </div>
+        </section>
+        <section class="content">
+            <div class="latest-updates">
+                <h2>最新動態</h2>
+                <p>探索 Anya Taylor-Joy 的最新電影、訪談與新聞報導。</p>
 
-            <div class="skill">
-                <i class="fab fa-java"></i>
-                <div class="square">
-                    <div class="square-s" style="width: 80%;"></div>
-                </div>
-                <p>80/100</p>
-            </div>
-
-            <div class="skill">
-                <i class="fab fa-html5"></i>
-                <div class="square">
-                    <div class="square-s" style="width: 75%;"></div>
-                </div>
-                <p>75/100</p>
-            </div>
-        </div>
-
-        <div class="skills">
-            <h2>語言能力</h2>
-            <div class="skill">
-                <i class="fas fa-language"></i>
-                <div class="square">
-                    <div class="square-s" style="width: 100%;"></div>
-                </div>
-                <p>中文 - 100/100</p>
-            </div>
-
-            <div class="skill">
-                <i class="fas fa-language"></i>
-                <div class="square">
-                    <div class="square-s" style="width: 85%;"></div>
-                </div>
-                <p>英文 - 85/100</p>
-            </div>
-
-            <div class="skill">
-                <i class="fas fa-language"></i>
-                <div class="square">
-                    <div class="square-s" style="width: 25%;"></div>
-                </div>
-                <p>西文 - 25/100</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 學歷與工作經歷區 -->
-    <section id="education-experience" class="section education-experience">
-        <div class="education">
-            <h2>學歷</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2020 - 2023</div>
-                    <div class="timeline-content">
-                        <h3>恆毅高中</h3>
-                        <p>社會組</p>
-                    </div>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2023 - 現在</div>
-                    <div class="timeline-content">
-                        <h3>中原大學</h3>
-                        <p>資訊管理系</p>
+                <!-- 預告片區塊 -->
+                <div class="video-wrapper">
+                    <h3>禁谷預告片</h3> <!-- 預告片標題 -->
+                    <p>觀看 Anya Taylor-Joy 參與的最新電影《禁谷》的預告片，更多精彩等著你！</p>
+                    <div class="video-container">
+                        <iframe width="560" height="315"
+                            src="https://www.youtube.com/embed/rUSdnuOLebE?si=mOqTb_PCNju-QV49"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                        </iframe>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="work-experience">
-            <h2>工作經歷與期望</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2023 - 2024</div>
-                    <div class="timeline-content">
-                        <h3>Smille 松菸打工經歷</h3>
-                        <p>在Smille 松菸擔任店員，負責顧客服務、產品介紹與銷售，並協助店鋪日常營運工作。</p>
-                    </div>
+            <div class="social-media-and-image">
+                <div class="social-media">
+                    <h2>Anya的社群平台</h2>
+                    <ul>
+                        <li><a href="https://www.instagram.com/anyataylorjoy/"><i
+                                    class="fab fa-instagram"></i>Instagram</a></li>
+                        <li><a href="https://twitter.com/anyataylorjoy"><i class="fab fa-twitter"></i>Twitter</a></li>
+                        <li><a href="https://www.facebook.com/AnyaTaylorJoy"><i class="fab fa-facebook"></i>Facebook</a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">畢業後</div>
-                    <div class="timeline-content">
-                        <h3>未來工作期望</h3>
-                        <p>成為某科技公司助理，負責協助團隊進行技術開發、測試和項目管理。</p>
-                    </div>
+                <div class="image-wrapper">
+                    <img src="image/AnyaGroup.png" alt="Anya Taylor-Joy">
                 </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- 個人經歷區 -->
-    <section id="personal-achievements" class="section personal-achievements">
-        <h2>個人經歷</h2>
-        <div class="achievements">
-            <div class="achievement">
-                <img src="image/911093.jpg" alt="運算思維獎狀">
-                <p>國三在電腦課考取的運算思維獎狀，展示了我的邏輯分析與問題解決能力超過全國一半以上的人，並對日後的資訊管理學習奠定了堅實的基礎，倘若能再多考個20分，就能獲得PR91的成績，日後可以再嘗試挑戰看看。
-                </p>
-            </div>
-            <div class="achievement">
-                <video src="video/slave.mp4" controls></video>
-                <p>在管理學課程中擔任志工，跟小朋友一起搭遊覽車前往老街溪淨溪，參與活動的同時要隨時注意小朋友的安全，不要讓他們亂跑，也要帶著他們收拾溪邊的垃圾並講解環保的知識。</p>
-            </div>
-            <div class="achievement">
-                <img src="image/Smile.jpg" alt="工作照片">
-                <p>第一次打工選擇了台北市的松菸Smile，在那邊主要負責飲料製作、餐點製作、服務客人以及介紹產品，獲得打工經驗的同時，也能夠迫使自己跟客人溝通，加強自己的社交能力，這項打工讓我學習到顧客服務與產品銷售的技巧，並體會到餐飲服務業的挑戰與成就感。
-                </p>
-            </div>
-            <div class="achievement">
-                <img src="image/TQC.jpg" alt="TQC">
-                <p>這是我在國中時期考取的TQC中文快打實用級證照，希望日後能考取英打或者更精進自己在中文輸入的效率。</p>
-            </div>
-            <!-- 新增的多益成績區塊 -->
-            <div class="achievement toeic">
-                <img src="image/Toeic.jpg" alt="多益成績">
-                <p>我參加了多益測驗，取得了695分的成績，目前認為這次的成績不夠理想，日後會再考取一次多益，期待能獲得更高的分數。</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- 聯繫方式區 -->
-    <!-- 聯繫方式區 -->
-    <section id="contact" class="section contact">
-        <h2>聯繫方式</h2>
-        <ul>
-            <li><a href="https://www.instagram.com/yourusername" target="_blank"><i class="fab fa-instagram"></i></a>
-            </li>
-            <li><a href="https://www.facebook.com/yourusername" target="_blank"><i class="fab fa-facebook"></i></a></li>
-            <li><a href="mailto:your-email@example.com"><i class="fas fa-envelope"></i></a></li>
-        </ul>
-    </section>
-
-
-    <!-- 網頁底部 -->
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2024 鄭翔元. 版權所有。</p>
+        <p>&copy; Anya fan place.</p>
     </footer>
-
-    <!-- 返回最上方按鈕 -->
-    <button id="backToTop" onclick="window.scrollTo(0, 0);"><i class="fas fa-arrow-up"></i></button>
-
-    <!-- 新增的JavaScript代碼 -->
-    <script>
-        // 當頁面滾動時，顯示或隱藏返回最上方按鈕
-        window.onscroll = function () {
-            var button = document.getElementById("backToTop");
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                button.style.display = "block";
-            } else {
-                button.style.display = "none";
-            }
-        };
-    </script>
 </body>
 
 </html>

@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #000000;
+}
+
+header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 15px 0;
+    text-align: center;
+}
+
+.header-container {
+    position: relative;
+    width: 100%;
+    height: 40vh; /* 設定容器高度為視口高度的 40% */
+    overflow: hidden; /* 隱藏多餘的部分，防止圖片溢出 */
+}
+
+.header-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 保持圖片比例，並填滿容器 */
+    object-position: center; /* 圖片置中顯示 */
+    position: absolute; /* 讓圖片完全覆蓋容器 */
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6347; /* 當滑鼠經過時顯示的顏色 */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; /* 使最新動態和社交媒體左右並排 */
+    padding: 20px;
+}
+
+.latest-updates {
+    flex: 1;
+    margin-right: 20px; /* 增加最新動態與社群平台間的間距 */
+}
+
+.social-media-and-image {
+    display: flex; /* 使社交平台和圖片左右並排 */
+    justify-content: space-between;
+    gap: 20px;
+    flex: 1;
+    flex-wrap: wrap; /* 使圖片和社群平台在小螢幕下換行 */
+}
+
+.social-media {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-media ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-media ul li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+.social-media ul li a {
+    color: #0077b5; /* 預設藍色 */
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center; /* 圖示和文字垂直置中 */
+    justify-content: center; /* 使文字和圖示水平置中 */
+}
+
+.social-media ul li:hover {
+    color: #005582;
+}
+
+.social-media ul li i {
+    margin-right: 10px; /* 圖示和文字之間的間距 */
+    font-size: 24px;
+}
+
+.social-media ul li a:hover i {
+    color: #005582;
+}
+
+/* 預告片區塊 */
+.video-wrapper {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+.video-wrapper h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.video-wrapper p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%; /* 16:9比例， 9/16 * 100 = 56.25% */
+    background-color: #000;
+    border-radius: 8px; /* 讓影片容器圓角 */
+    overflow: hidden;
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; /* 影片會自動填滿容器，保持 16:9 比例 */
+    border: none;
+}
+
+.image-wrapper {
+    width: 100%;
+    padding-top: 56.25%; /* 維持16:9比例 */
+    background-color: #f9f9f9;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid #555; 
+    border-radius: 8px; /* 圓角邊框 */
+}
+
+
+
+main {
+    padding: 20px;
+    text-align: center;
+    min-height: calc(100vh - 120px); /* 保證主內容區域至少佔滿剩餘的頁面高度 */
+}
+
+footer {
+    background-color: #ffffff;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
