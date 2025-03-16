@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聯絡我們</title>
+    <link rel="stylesheet" href="contact.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">首頁</a></li>
+                <li><a href="biography.html">生平</a></li>
+                <li><a href="filmography.html">精選作品</a></li>
+                <li><a href="awards.html">獎項</a></li>
+                <li><a href="photos.html">圖片集</a></li>
+                <li><a href="videos.html">影片</a></li>
+                <li><a href="trivia.html">冷知識</a></li>
+                <li><a href="quotes.html">個人語錄</a></li>
+                <li><a href="fanart.html">粉絲創作</a></li>
+                <li><a href="contact.html">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="header-container">
+        <img src="image/Banner.png" alt="Anya Taylor-Joy">
+    </div>
+
+    <section class="contact-section">
+        <h2>聯絡我們</h2>
+        <p>你可以透過以下方式聯絡我們：</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/yourusername" target="_blank" title="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/yourusername" target="_blank" title="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="mailto:youremail@example.com" title="Gmail">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <h3>留言板</h3>
+        <form id="messageForm">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="message">留言：</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+            <button type="submit">提交留言</button>
+        </form>
+
+        <h3>留言區</h3>
+        <div id="messageBoard">
+            <!-- 留言將顯示在此區域 -->
+        </div>
+    </section>
+
+    <footer>
+        <p>Anya fan place.</p>
+    </footer>
+
+    <script>
+        // Get messages from localStorage and display them on page load
+        window.onload = function () {
+            const messageBoard = document.getElementById('messageBoard');
+            const storedMessages = JSON.parse(localStorage.getItem('messages')) || [];
+
+            // Display all stored messages
+            storedMessages.forEach(function (msg) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('message');
+                messageDiv.innerHTML = `
+                    <p><strong>${msg.name} (${msg.email})</strong> 留言：</p>
+                    <p>${msg.message}</p>
+                    <hr>
+                `;
+                messageBoard.appendChild(messageDiv);
+            });
+        };
+
+        // 讓留言表單提交並顯示留言
+        document.getElementById('messageForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // 防止表單刷新頁面
+
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // 在留言板區域顯示留言
+            const messageBoard = document.getElementById('messageBoard');
+            const messageDiv = document.createElement('div');
+            messageDiv.classList.add('message');
+            messageDiv.innerHTML = `
+                <p><strong>${name} (${email})</strong> 留言：</p>
+                <p>${message}</p>
+                <hr>
+            `;
+            messageBoard.appendChild(messageDiv);
+
+            // Save the new message to localStorage
+            const storedMessages = JSON.parse(localStorage.getItem('messages')) || [];
+            storedMessages.push({ name, email, message });
+            localStorage.setItem('messages', JSON.stringify(storedMessages));
+
+            // 清空表單
+            document.getElementById('messageForm').reset();
+        });
+    </script>
+
+</body>
+
+</html>

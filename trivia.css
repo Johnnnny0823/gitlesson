@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
-    color: #333;
+    color: #000000;
 }
 
 /* 使導覽行固定在頁面頂部 */
@@ -40,7 +40,6 @@ nav ul li a:hover {
     color: #ff6347;
 }
 
-/* BANNER 設定 */
 .header-container {
     position: relative;
     width: 100%;
@@ -58,68 +57,42 @@ nav ul li a:hover {
     left: 0;
 }
 
-.container {
-    display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
+main {
+    max-width: 900px;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
-/* 側邊欄 */
-.sidebar {
-    width: 300px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.sidebar img {
-    width: 100%;
-    border-radius: 10px;
-}
-
-.sidebar ul {
-    list-style: none;
-    padding: 0;
-}
-
-.sidebar ul li {
-    padding: 5px 0;
-    font-size: 14px;
-}
-
-/* 主要內容 */
-.content {
-    flex: 1;
-    background-color: white;
-    padding: 20px;
-    margin-left: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
-
-.content h2 {
-    border-bottom: 2px solid #444;
+.trivia h2 {
+    font-size: 24px;
+    border-bottom: 2px solid #000;
     padding-bottom: 5px;
 }
 
-.content h3 {
-    color: #444;
-    margin-top: 20px;
+.trivia-box {
+    border: 2px solid #000;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
 }
 
-.content h4 {
-    color: #555;
-    margin-top: 15px;
+.trivia-box p {
     font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ccc;
+    margin: 15px 0;
 }
 
 footer {
-    background-color: white;
-    color: black;
     text-align: center;
-    padding: 10px 0;
-    width: 100%;
+    padding: 15px 0;
+    margin-top: 40px;
+    background-color: white;
+    font-size: 14px;
 }
-

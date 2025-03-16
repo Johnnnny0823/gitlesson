@@ -3,7 +3,7 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
-    color: #333;
+    color: #000000;
 }
 
 /* 使導覽行固定在頁面頂部 */
@@ -40,7 +40,6 @@ nav ul li a:hover {
     color: #ff6347;
 }
 
-/* BANNER 設定 */
 .header-container {
     position: relative;
     width: 100%;
@@ -58,61 +57,66 @@ nav ul li a:hover {
     left: 0;
 }
 
-.container {
+.awards {
+    padding: 20px;
+    text-align: left;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.awards h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.award-item {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     display: flex;
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* 側邊欄 */
-.sidebar {
-    width: 300px;
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+.award-text {
+    flex-grow: 1;
 }
 
-.sidebar img {
-    width: 100%;
-    border-radius: 10px;
+.award-item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
 }
 
-.sidebar ul {
-    list-style: none;
-    padding: 0;
+.award-item p {
+    font-size: 16px;
+    line-height: 1.6;
 }
 
-.sidebar ul li {
-    padding: 5px 0;
-    font-size: 14px;
+.award-image {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
-/* 主要內容 */
-.content {
-    flex: 1;
-    background-color: white;
-    padding: 20px;
-    margin-left: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-}
+@media (max-width: 768px) {
+    .awards {
+        width: 90%;
+    }
 
-.content h2 {
-    border-bottom: 2px solid #444;
-    padding-bottom: 5px;
-}
+    .award-item {
+        padding: 10px;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.content h3 {
-    color: #444;
-    margin-top: 20px;
-}
-
-.content h4 {
-    color: #555;
-    margin-top: 15px;
-    font-size: 18px;
+    .award-image {
+        width: 100%;
+        height: auto;
+        margin-top: 10px;
+    }
 }
 
 footer {
@@ -122,4 +126,3 @@ footer {
     padding: 10px 0;
     width: 100%;
 }
-
