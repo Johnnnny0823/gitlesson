@@ -1,0 +1,300 @@
+/* 全局樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 網頁的全局背景 */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('image/BACKGROUND.jpg'); /* 這裡可以設置一個背景圖片 */
+    background-size: cover; /* 確保背景圖片覆蓋整個畫面 */
+    background-position: center;
+    background-attachment: fixed; /* 固定背景，使其隨頁面滾動 */
+}
+
+/* 各個區塊的背景樣式 */
+.section {
+    background-color: rgba(255, 255, 255, 0.8); /* 設置半透明背景，保持背景圖片顯示 */
+    padding: 4em 1em;
+    max-width: 1200px;
+    margin: auto;
+    border-radius: 8px; /* 可選：區塊邊角圓滑 */
+}
+
+/* 網頁的標題區域 */
+header {
+    background-color: #222;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1.5em;
+    margin-top: 0.5em;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 20px;
+}
+
+/* 個人簡介區 */
+.about {
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    padding: 2em;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.profile-photo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* 技能與語言區 */
+.skills-language {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    padding: 2em;
+    border-radius: 8px;
+}
+
+.square {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.square-s {
+    height: 100%;
+    background-color: #03045e;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.skill i {
+    font-size: 2em;
+    color: #03045e;
+}
+
+/* 學歷與工作經歷區 */
+.timeline { 
+    position: relative; 
+    padding-left: 40px; 
+    margin-top: 2em; 
+    border-left: 3px solid #ddd; 
+} 
+
+.timeline-item { 
+    margin-bottom: 2em; 
+    position: relative; 
+} 
+
+.timeline-date { 
+    font-weight: bold; 
+    margin-bottom: 0.5em; 
+    color: #4CAF50; 
+} 
+
+.timeline-content { 
+    padding: 0.5em 1em; 
+    background-color: #f4f4f4; /* 白色背景 */ 
+    border-radius: 5px; 
+} 
+
+.education-experience { 
+    display: flex; 
+    gap: 3em; 
+} 
+
+.education, .work-experience { 
+    flex: 1; background-color: #f9f9f9; /* 非常淺的灰色 */ 
+    padding: 2em; 
+    border-radius: 8px; }
+
+/* 個人經歷區 */
+.personal-achievements {
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    padding: 2em;
+    border-radius: 8px;
+    margin-top: 2em;
+    text-align: center;
+}
+
+.achievements {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* 兩列 */
+    gap: 2em;
+    justify-items: center;
+    margin-top: 1.5em;
+}
+
+.achievement {
+    background-color: #f9f9f9;
+    padding: 1em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 讓內容垂直居中 */
+    justify-content: center; /* 讓內容水平居中 */
+    margin: 0 auto; /* 保證容器本身水平居中 */
+}
+
+.achievement img, .achievement video {
+    width: 100%;
+    max-width: 400px; /* 設置最大寬度 */
+    height: 250px; /* 固定高度 */
+    object-fit: cover; /* 保持比例並裁剪 */
+    border-radius: 8px;
+    margin-bottom: 0.5em;
+    display: block; /* 確保圖片作為塊級元素顯示 */
+    margin-left: auto; /* 向右居中 */
+    margin-right: auto; /* 向左居中 */
+}
+
+.achievement p {
+    font-size: 0.9em;
+    color: #666;
+    line-height: 1.4;
+}
+
+/* 讓多益成績區的圖片在網格中居中 */
+.achievements .achievement:nth-child(5) {
+    grid-column: 1 / span 2; /* 讓多益圖片佔滿整行 */
+    margin-top: 2em; /* 給多益圖片區一點間距 */
+}
+
+/* 聯繫我區 */
+.contact {
+    background-color: rgba(255, 255, 255, 0.9); /* 半透明背景 */
+    padding: 2em;
+    margin-top: 4em;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 圖標樣式 */
+.contact ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 5em;
+    margin-top: 1em;
+}
+
+.contact ul li a {
+    font-size: 5em;
+    color: #222;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.contact ul li a:hover {
+    color: #4CAF50;
+}
+
+.contact-icons {
+    display: block;
+}
+
+/* 頁腳樣式 */
+footer {
+    text-align: center;
+    padding: 1em;
+    background-color: #222;
+    color: #fff;
+    margin-top: 2em;
+}
+
+/* 其他通用樣式 */
+.skills, .language {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.skills-language {
+    display: flex;
+    gap: 2em;
+    justify-content: space-between;
+}
+
+.square {
+    width: 100%;
+    height: 20px;
+    background-color: #e0e0e0;
+    position: relative;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.square-s {
+    height: 100%;
+    background-color: #03045e;
+    position: absolute;
+    left: 0;
+    border-radius: 5px;
+}
+
+.skill {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.skill i {
+    font-size: 2em;
+    color: #03045e;
+}
+
+.skills, .language {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
