@@ -19,6 +19,14 @@
 
 ---
 
+## 📸 畫面
+
+| 登入頁 | 藥師營運總覽 |
+|---|---|
+| ![登入頁](docs/screenshots/login.jpg) | ![藥師營運總覽](docs/screenshots/pharmacist.jpg) |
+
+---
+
 ## 🆚 與 SmartPharma 的差異
 
 | | 本 repo（早期版） | [SmartPharma](https://github.com/Johnnnny0823/SmartPharma)（完整版） |
